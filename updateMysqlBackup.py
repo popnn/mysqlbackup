@@ -1,9 +1,7 @@
 import os
 import time
-commitCounter=0
 
 while(1):
 
-	os.system("cd /home/ubuntu/mysqlbackup && sudo git add . && sudo git commit -m 'commit number {}' && sudo git push").format(str(commitCounter))
-	commitCounter+=1
+	os.system("cd /home/ubuntu/mysqlbackup && sudo git add . && sudo git commit -m 'auto commited from server' && sudo git push")
 	time.sleep(86400)
